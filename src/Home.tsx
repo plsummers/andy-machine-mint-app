@@ -191,59 +191,53 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <main>
-      {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
-      )}
-
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
-
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
-
-      {wallet && whitelistEnabled && <p>Whitelist token balance: {whitelistTokenBalance}</p>}
-
-      {<MintContainer>
-        {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
-        ) :
-          candyMachine?.state.gatekeeper &&
-            wallet.publicKey &&
-            wallet.signTransaction ? (
-            <GatewayProvider
-              wallet={{
-                publicKey:
-                  wallet.publicKey ||
-                  new PublicKey(CANDY_MACHINE_PROGRAM),
-                //@ts-ignore
-                signTransaction: wallet.signTransaction,
-              }}
-              // // Replace with following when added
-              // gatekeeperNetwork={candyMachine.state.gatekeeper_network}
-              gatekeeperNetwork={
-                candyMachine?.state?.gatekeeper?.gatekeeperNetwork
-              } // This is the ignite (captcha) network
-              /// Don't need this for mainnet
-              clusterUrl={rpcUrl}
-              options={{ autoShowModal: false }}
-            >
-              <MintButton
-                candyMachine={candyMachine}
-                isMinting={isMinting}
-                onMint={onMint}
-              />
-            </GatewayProvider>
+    <Container style={{ marginTop: 100 }}>
+      <Container maxWidth="xs" style={{ position: 'relative' }}>
+        <Paper
+          style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
+        >
+          {!wallet.connected ? (
+            <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
-            <MintButton
-              candyMachine={candyMachine}
-              isMinting={isMinting}
-              onMint={onMint}
-            />
+            <>
+              <Header candyMachine={candyMachine} />
+              <MintContainer>
+                {candyMachine?.state.isActive &&
+                candyMachine?.state.gatekeeper &&
+                wallet.publicKey &&
+                wallet.signTransaction ? (
+                  <GatewayProvider
+                    wallet={{
+                      publicKey:
+                        wallet.publicKey ||
+                        new PublicKey(CANDY_MACHINE_PROGRAM),
+                      //@ts-ignore
+                      signTransaction: wallet.signTransaction,
+                    }}
+                    gatekeeperNetwork={
+                      candyMachine?.state?.gatekeeper?.gatekeeperNetwork
+                    }
+                    clusterUrl={rpcUrl}
+                    options={{ autoShowModal: false }}
+                  >
+                    <MintButton
+                      candyMachine={candyMachine}
+                      isMinting={isUserMinting}
+                      onMint={onMint}
+                    />
+                  </GatewayProvider>
+                ) : (
+                  <MintButton
+                    candyMachine={candyMachine}
+                    isMinting={isUserMinting}
+                    onMint={onMint}
+                  />
+                )}
+              </MintContainer>
+            </>
           )}
-      </MintContainer>}
+        </Paper>
+      </Container>
 
       <Snackbar
         open={alertState.open}
@@ -257,7 +251,7 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
-    </main>
+    </Container>
   );
 };
 
