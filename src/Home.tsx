@@ -231,7 +231,7 @@ const Home = (props: HomeProps) => {
               ) : (
                 <MintButton
                   candyMachine={candyMachine}
-                  isMinting={isUserMinting}
+                  isMinting={isMinting}
                   onMint={onMint}
                 />
               )}
