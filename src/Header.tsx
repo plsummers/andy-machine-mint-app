@@ -48,7 +48,6 @@ export const Header = ({ candyMachine }: HeaderProps) => {
           date={toDate(
             candyMachine?.state.goLiveDate
               ? candyMachine?.state.goLiveDate
-              : candyMachine?.state.isPresale
               ? new anchor.BN(new Date().getTime() / 1000)
               : undefined,
           )}
@@ -56,8 +55,6 @@ export const Header = ({ candyMachine }: HeaderProps) => {
           status={
             !candyMachine?.state?.isActive || candyMachine?.state?.isSoldOut
               ? 'COMPLETED'
-              : candyMachine?.state.isPresale
-              ? 'PRESALE'
               : 'LIVE'
           }
         />
@@ -67,10 +64,7 @@ export const Header = ({ candyMachine }: HeaderProps) => {
 };
 
 const getMintPrice = (candyMachine: CandyMachine): string => {
-  const price = formatNumber.asNumber(
-    candyMachine.state.isPresale && candyMachine.state.whitelistMintSettings?.discountPrice
-      ? candyMachine.state.whitelistMintSettings?.discountPrice!
-      : candyMachine.state.price!,
+  const price = ("0.5 SOL")
   );
   return `◎ ${price}`;
 };
