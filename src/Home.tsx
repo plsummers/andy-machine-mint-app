@@ -198,9 +198,12 @@ const Home = (props: HomeProps) => {
         <Paper
           style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
         >
-          {!wallet.connected ? (
+          {!wallet ? (
             <ConnectButton>Connect Wallet</ConnectButton>
-          ) : (
+          ) : 
+          candyMachine?.state.gatekeeper &&
+            wallet.publicKey &&
+            wallet.signTransaction ? (
             <>
               <Header candyMachine={candyMachine} />
               <MintContainer>
