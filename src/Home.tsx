@@ -37,7 +37,6 @@ const ConnectButton = styled(WalletDialogButton)`
   color: white;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
   `;
 
 const MintContainer = styled.div``; // add your styles here
@@ -204,7 +203,7 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-    <Container style={{ marginTop: 100}}>
+    <Container style={{ marginTop: 100,  text-align: center}}>
     <Container maxWidth="xs" style={{ position: 'relative' }}>
       <Paper style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}>
         {!wallet ? (
