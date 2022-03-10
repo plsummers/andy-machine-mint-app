@@ -39,9 +39,7 @@ const ConnectButton = styled(WalletDialogButton)`
   font-weight: bold;
   `;
 
-const MintContainer = styled.div`
-text-align: center;
-`; // add your styles here
+const MintContainer = styled.div``; // add your styles here
 
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
