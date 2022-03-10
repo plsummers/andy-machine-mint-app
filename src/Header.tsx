@@ -47,7 +47,6 @@ export const Header = ({ candyMachine }: HeaderProps) => {
         <MintCountdown
           date={toDate(
             candyMachine?.state.goLiveDate
-              ? candyMachine?.state.goLiveDate
               ? new anchor.BN(new Date().getTime() / 1000)
               : undefined,
           )}
