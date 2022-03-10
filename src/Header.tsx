@@ -4,10 +4,10 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { MintCountdown } from './MintCountdown';
 import { toDate, formatNumber } from './utils';
-import { CandyMachineAccount } from './candy-machine';
+import { CandyMachine } from './candy-machine';
 
 type HeaderProps = {
-  candyMachine?: CandyMachineAccount;
+  candyMachine?: CandyMachine;
 };
 
 export const Header = ({ candyMachine }: HeaderProps) => {
@@ -66,7 +66,7 @@ export const Header = ({ candyMachine }: HeaderProps) => {
   );
 };
 
-const getMintPrice = (candyMachine: CandyMachineAccount): string => {
+const getMintPrice = (candyMachine: CandyMachine): string => {
   const price = formatNumber.asNumber(
     candyMachine.state.isPresale && candyMachine.state.whitelistMintSettings?.discountPrice
       ? candyMachine.state.whitelistMintSettings?.discountPrice!
