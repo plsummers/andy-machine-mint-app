@@ -237,12 +237,12 @@ const Home = (props: HomeProps) => {
                     isMinting={isUserMinting}
                     onMint={onMint}
                   />
-                )}
-              </MintContainer>
-            </>
-          )}
-        </Paper>
-      </Container>
+                    )}
+                  </MintContainer>
+                </>
+              )}
+            </Paper>
+          </Container>
 
       <Snackbar
         open={alertState.open}
