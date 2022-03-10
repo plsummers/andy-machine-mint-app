@@ -18,7 +18,6 @@ export const CTAButton = styled(Button)`
   color: white;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
 `; // add your styles here
 
 export const CounterText = styled.span``; // add your styles here
