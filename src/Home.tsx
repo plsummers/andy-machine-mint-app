@@ -216,7 +216,7 @@ const Home = (props: HomeProps) => {
     <main>
     <Container style={{ 
           marginTop: 100,
-          display: 'flex'
+          display: 'flex',
           flex-wrap: 'wrap',
           justify-content: 'center',
           align-items: 'center',
