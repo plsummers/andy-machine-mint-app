@@ -40,7 +40,8 @@ const ConnectButton = styled(WalletDialogButton)`
   `;
 
 const MintContainer = styled.div`
-text-align: center;
+justify-content: center;
+    align-items: center;
 `; // add your styles here
 
 export interface HomeProps {
