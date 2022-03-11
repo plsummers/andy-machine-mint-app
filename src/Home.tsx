@@ -37,11 +37,19 @@ const ConnectButton = styled(WalletDialogButton)`
   color: white;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   `;
 
 const MintContainer = styled.div`
-justify-content: center;
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    position: relative;
 `; // add your styles here
 
 export interface HomeProps {
