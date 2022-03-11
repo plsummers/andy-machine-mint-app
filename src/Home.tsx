@@ -214,13 +214,7 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-    <Container style={{ 
-          marginTop: 100,
-          display: 'flex',
-          flex-wrap: 'wrap',
-          justify-content: 'center',
-          align-items: 'center',
-          position: 'relative'}}>
+    <Container style={{ marginTop: 100, display: 'flex', justify-content: 'center', align-items: 'center', position: 'relative'}}>
     <Container maxWidth="xs" style={{ position: 'relative' }}>
       <Paper style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}>
         {!wallet ? (
