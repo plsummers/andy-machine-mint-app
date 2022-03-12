@@ -228,6 +228,7 @@ const Home = (props: HomeProps) => {
     object-position: center;
     align-items: center;
     position: relative;
+    margin-top: -50px;
      margin-bottom: 30px;
 border-radius: 5%;
 `
