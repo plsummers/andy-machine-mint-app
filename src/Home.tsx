@@ -219,8 +219,8 @@ const Home = (props: HomeProps) => {
     border-radius: 5%;
   `
  const WebLink = styled.div`
-    width: 300px;
-    height: 60px;
+    width: 100%;
+    height: 20%;
     background-color: #d5106f;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ const Home = (props: HomeProps) => {
     align-items: center;
     position: relative;
      margin-bottom: 30px;
-      border-radius: 5%;
+border-radius: 5%;
 `
 
 const Title1 = styled.h1`
