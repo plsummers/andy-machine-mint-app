@@ -1,20 +1,23 @@
 import styled from "styled-components";
 
 const Container = styled("div")`
-    width: 100vw;
-    height: auto;
-    background-color: #af48ca;
+    width: 480px;
+    height: 20px;
+    background-color: #ffffff;
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
     position: relative;
 `
 
 const Title = styled("h1")`
     margin: 0;
     white-space: nowrap;
+     justify-content: center;
+    align-items: center;
+    position: relative;
 `
 
 const Link = styled("a")`
@@ -22,7 +25,9 @@ const Link = styled("a")`
     margin: 1rem;
     cursor: pointer;
     color: initial;
-    text-decoration: none;
+     justify-content: center;
+    align-items: center;
+    position: relative;
     }
 `
 
@@ -31,7 +36,7 @@ const Navbar = () => {
         <Container>
             <Title>
               <Link href="https://soletters.io/">
-                Titan Dogs
+                SOLETTERS.IO
                 </Link>
             </Title>
         </Container>
