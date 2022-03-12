@@ -221,7 +221,7 @@ const Home = (props: HomeProps) => {
  const WebLink = styled.div`
     width: 100%;
     height: auto;
-    background-color: #af48ca;
+    background-color: #ff0082;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -232,6 +232,7 @@ const Home = (props: HomeProps) => {
 
 const Title1 = styled.h1`
     margin: 0;
+    white-space: nowrap;
 `
 
 const Link1 = styled.a`
