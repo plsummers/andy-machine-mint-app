@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled("div")`
+const Container1 = styled("div")`
     width: 100vw;
     height: 20px;
     background-color: #ffffff;
@@ -12,7 +12,7 @@ const Container = styled("div")`
     position: relative;
 `
 
-const Title = styled("h1")`
+const Title1 = styled("h1")`
     margin: 0;
     white-space: nowrap;
      justify-content: center;
@@ -22,13 +22,13 @@ const Title = styled("h1")`
 
 const Navbar = () => {
     return (
-        <Container>
-            <Title>
-              <Link href="https://soletters.io/">
+        <Container1>
+            <Title1>
+              
                 SOLETTERS.IO
-                </Link>
+               
             </Title>
-        </Container>
+        </Container1>
     )
 }
 
