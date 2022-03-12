@@ -215,7 +215,7 @@ const Home = (props: HomeProps) => {
     height: 480px;
     object-fit: cover;
     object-position: top;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 5%;
   `
   
