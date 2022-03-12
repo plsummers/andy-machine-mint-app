@@ -218,20 +218,43 @@ const Home = (props: HomeProps) => {
     margin-bottom: 30px;
     border-radius: 5%;
   `
-  const WebLink = styled.div`
-   width: 100%;
-    height: 100px;
-    background-color: #813eee;
+ const WebLink = styled.div`
+    width: 100vw;
+    height: auto;
+    background-color: #af48ca;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: end;
-  `;
+    align-items: center;
+    position: relative;
+`
+
+const Title1 = styled.h1`
+    margin: 0;
+`
+
+const Link1 = styled.a`
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: initial;
+    }
+`
+  
+  
+  
   
   return (
     <main>
     <Container style={{ marginTop: 100 }}>
     <Container maxWidth="xs" style={{ position: 'relative' }}>
-       <WebLink>soletters.io</WebLink>
+        <WebLink>
+            <Title1>
+                 <Link1 href=https://soletters.io/>
+                soletters.io
+            </Title1>
+            </Link1>
+        </WebLink>
       <SOLETTERSImage src="/example.gif" alt="solettersimage"/>
       <Paper style={{ padding: 24, background: 'linear-gradient(180deg, ##ff0082 0%, ##1f1d1e 100%)', borderRadius: 6 }}>
         {!wallet ? (
