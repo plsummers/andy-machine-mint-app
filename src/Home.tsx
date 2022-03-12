@@ -219,7 +219,7 @@ const Home = (props: HomeProps) => {
     border-radius: 5%;
   `
  const WebLink = styled.div`
-    width: 100vw;
+    width: 100px;
     height: auto;
     background-color: #af48ca;
     display: flex;
