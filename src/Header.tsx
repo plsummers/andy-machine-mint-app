@@ -64,5 +64,5 @@ export const Header = ({ candyMachine }: HeaderProps) => {
 
 const getMintPrice = (candyMachine: CandyMachine): string => {
   const price = ("0.5 SOL");
-  return `◎ ${price}`;
+  return `${price}`;
 };
