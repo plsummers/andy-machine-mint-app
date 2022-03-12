@@ -73,11 +73,12 @@ const App = () => {
   );
 
   return (
+    <Navbar />
       <ThemeProvider theme={theme}>
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
-              <Navbar />
+              
               <Home
                 candyMachineId={candyMachineId}
                 connection={connection}
