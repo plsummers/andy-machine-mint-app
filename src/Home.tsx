@@ -233,7 +233,6 @@ const Home = (props: HomeProps) => {
 
 const Title1 = styled.h1`
     margin: 0;
-    white-space: nowrap;
 `
 
 const Link1 = styled.a`
