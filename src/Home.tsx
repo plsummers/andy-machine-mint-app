@@ -260,7 +260,7 @@ const Link1 = styled.a`
     <Container maxWidth="xs" style={{ position: 'relative' }}>
         <WebLink>
             <Title1>
-              <Link1 href='www.soletters.io'>
+              <Link1 href='https://soletters.io/'>
                 soletters.io
               </Link1>
             </Title1>
