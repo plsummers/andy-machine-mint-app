@@ -221,7 +221,7 @@ const Home = (props: HomeProps) => {
  const WebLink = styled.div`
     width: 100%;
     height: auto;
-    background-color: #d5106f;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     object-fit: cover;
@@ -234,7 +234,7 @@ border-radius: 5%;
 
 const Title1 = styled.h1`
     margin: 10px;
-    color: white;
+    color: black;
     justify-content: center;
     align-items: end;
 `
