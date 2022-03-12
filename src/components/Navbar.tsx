@@ -20,17 +20,6 @@ const Title = styled("h1")`
     position: relative;
 `
 
-const Link = styled("a")`
-    font-size: 1.5rem;
-    margin: 1rem;
-    cursor: pointer;
-    color: initial;
-     justify-content: center;
-    align-items: center;
-    position: relative;
-    }
-`
-
 const Navbar = () => {
     return (
         <Container>
