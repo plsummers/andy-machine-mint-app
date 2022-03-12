@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container1 = styled("div")`
     width: 100vw;
-    height: 30px;
+    height: 100px;
     background-color: #ffffff;
 
     display: flex;
@@ -11,7 +11,7 @@ const Container1 = styled("div")`
 `
 
 const Title1 = styled("h1")`
-    margin: 20;
+    margin-top: 5em;
 `
 
 const Navbar = () => {
