@@ -223,7 +223,6 @@ const Home = (props: HomeProps) => {
     height: auto;
     background-color: #ff0082;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
