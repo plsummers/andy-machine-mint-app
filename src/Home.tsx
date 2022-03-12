@@ -219,19 +219,19 @@ const Home = (props: HomeProps) => {
     border-radius: 5%;
   `
  const WebLink = styled.div`
-    width: 480px;
+    width: 400px;
     height: 60px;
-    margin-bottom: 30px;
-    border-radius: 5%;
     background-color: #d5106f;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+     margin-bottom: 30px;
+      border-radius: 5%;
 `
 
 const Title1 = styled.h1`
     margin: 0;
+    color: white;
 `
 
 const Link1 = styled.a`
