@@ -235,7 +235,7 @@ border-radius: 5%;
 
 const Title1 = styled.h1`
     margin: 10px;
-    color: #ff0082;
+    color: #ce125f;
     justify-content: center;
     align-items: end;
     text-decoration: underline;
@@ -245,7 +245,7 @@ const Title1 = styled.h1`
 
 const Link1 = styled.a`
     cursor: pointer;
-    color: #ff0082;
+    color: #ce125f;
     }
 `
   
