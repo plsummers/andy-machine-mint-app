@@ -224,6 +224,8 @@ const Home = (props: HomeProps) => {
     background-color: #d5106f;
     display: flex;
     justify-content: center;
+    object-fit: cover;
+    object-position: top;
     align-items: center;
      margin-bottom: 30px;
       border-radius: 5%;
