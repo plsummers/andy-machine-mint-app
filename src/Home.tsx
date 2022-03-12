@@ -258,14 +258,14 @@ const Link1 = styled.a`
     <Container maxWidth="xs" style={{ position: 'relative' }}>
         <WebLink>
             <Title1>
-              <Link1 href='https://soletters.io/'>
+              <Link1 href='https://soletters.io/', target='_blank'>
                 soletters.io
               </Link1>
             </Title1>
            
         </WebLink>
       <SOLETTERSImage src="/example.gif" alt="solettersimage"/>
-      <Paper style={{ padding: 24, background: 'linear-gradient(180deg, ##ff0082 0%, ##1f1d1e 100%)', borderRadius: 6 }}>
+      <Paper style={{ padding: 24, background: 'linear-gradient(180deg, #ff0082 0%, ##1f1d1e 100%)', borderRadius: 6 }}>
         {!wallet ? (
           <ConnectButton>Connect Wallet</ConnectButton>) : 
         
