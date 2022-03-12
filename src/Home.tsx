@@ -227,6 +227,7 @@ const Home = (props: HomeProps) => {
     object-fit: cover;
     object-position: top;
     align-items: center;
+    position: relative;
      margin-bottom: 30px;
       border-radius: 5%;
 `
