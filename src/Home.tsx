@@ -237,6 +237,8 @@ const Title1 = styled.h1`
     color: black;
     justify-content: center;
     align-items: end;
+    text-decoration: underline;
+
 `
 
 const Link1 = styled.a`
