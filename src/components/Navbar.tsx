@@ -8,16 +8,10 @@ const Container1 = styled("div")`
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    position: relative;
 `
 
 const Title1 = styled("h1")`
-    margin: 0;
-    white-space: nowrap;
-     justify-content: center;
-    align-items: center;
-    position: relative;
+    margin: 20;
 `
 
 const Navbar = () => {
