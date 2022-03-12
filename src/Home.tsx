@@ -224,7 +224,7 @@ const Home = (props: HomeProps) => {
     <Container style={{ marginTop: 100 }}>
     <Container maxWidth="xs" style={{ position: 'relative' }}>
       <SOLETTERSImage src="/example.gif" alt="solettersimage"/>
-      <Paper style={{ padding: 24, background: 'linear-gradient(180deg, #af48ca 0%, #000000 100%)', borderRadius: 6 }}>
+      <Paper style={{ padding: 24, background: 'linear-gradient(180deg, ##ff0082 0%, ##1f1d1e 100%)', borderRadius: 6 }}>
         {!wallet ? (
           <ConnectButton>Connect Wallet</ConnectButton>) : 
         
