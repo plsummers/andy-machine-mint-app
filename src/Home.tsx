@@ -245,7 +245,7 @@ const Title1 = styled.h1`
 
 const Link1 = styled.a`
     cursor: pointer;
-    color: initial;
+    color: #ff0082;
     }
 `
   
