@@ -27,7 +27,7 @@ const Navbar = () => {
               
                 SOLETTERS.IO
                
-            </Title>
+            </Title1>
         </Container1>
     )
 }
