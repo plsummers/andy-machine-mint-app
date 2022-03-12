@@ -228,6 +228,7 @@ const Home = (props: HomeProps) => {
     align-items: center;
     position: relative;
     margin-bottom: 30px
+    border-radius: 5%;
 `
 
 const Title1 = styled.h1`
