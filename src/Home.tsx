@@ -244,8 +244,6 @@ const Title1 = styled.h1`
 `
 
 const Link1 = styled.a`
-    font-size: 1.5rem;
-    margin: 1rem;
     cursor: pointer;
     color: initial;
     }
