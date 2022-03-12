@@ -218,7 +218,7 @@ const Home = (props: HomeProps) => {
     margin-bottom: 30px;
     border-radius: 5%;
   `
-  const WebLink = styled(div)`
+  const WebLink = styled.div`
    width: 100vw;
     height: 100px;
     background-color: #813eee;
