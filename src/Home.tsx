@@ -212,7 +212,7 @@ const Home = (props: HomeProps) => {
 
   const SOLETTERSImage = styled("img")`
     width: 100%;
-    height: 350px;
+    height: 480px;
     object-fit: cover;
     object-position: top;
     margin-bottom: 30px;
