@@ -239,6 +239,7 @@ const Title1 = styled.h1`
     justify-content: center;
     align-items: end;
     text-decoration: underline;
+    font-size: 32px;
 
 `
 
