@@ -235,6 +235,8 @@ const Home = (props: HomeProps) => {
 const Title1 = styled.h1`
     margin: 0;
     color: white;
+    justify-content: center;
+    align-items: end;
 `
 
 const Link1 = styled.a`
