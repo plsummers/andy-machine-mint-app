@@ -235,7 +235,7 @@ border-radius: 5%;
 
 const Title1 = styled.h1`
     margin: 10px;
-    color: black;
+    color: #ff0082;
     justify-content: center;
     align-items: end;
     text-decoration: underline;
