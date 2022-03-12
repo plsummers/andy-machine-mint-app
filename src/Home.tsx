@@ -220,7 +220,7 @@ const Home = (props: HomeProps) => {
   `
  const WebLink = styled.div`
     width: 100%;
-    height: 20%;
+    height: auto;
     background-color: #d5106f;
     display: flex;
     justify-content: center;
