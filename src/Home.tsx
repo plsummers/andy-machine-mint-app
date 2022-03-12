@@ -210,10 +210,20 @@ const Home = (props: HomeProps) => {
     props.connection,
   ]);
 
+  const SOLETTERSImage = styled("img")`
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 30px;
+    border-radius: 10%;
+  `
+  
   return (
     <main>
     <Container style={{ marginTop: 100 }}>
     <Container maxWidth="xs" style={{ position: 'relative' }}>
+      <SOLETTERSImage src="/example.gif" alt="solettersimage"/>
       <Paper style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}>
         {!wallet ? (
           <ConnectButton>Connect Wallet</ConnectButton>) : 
